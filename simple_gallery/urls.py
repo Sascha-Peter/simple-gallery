@@ -20,7 +20,7 @@ from simple_gallery import settings
 from django.views.static import serve
 
 urlpatterns = [
-    url(r'^$', TemplateView.as_view(template_name="base.html")),
+    url(r'^$', TemplateView.as_view(template_name="base.html"), name="home"),
 
     url(r'^admin/', include(admin.site.urls)),
 ]
