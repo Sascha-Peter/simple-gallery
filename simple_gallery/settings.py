@@ -69,4 +69,9 @@ SITE_ID = 1
 try:
     from .settings_local import *
 except:
+    # Local development settings to overwrite db / secret / ...
+    # This section may needs improvement with a specific configuration file
+    # for the secret key.
+    import random
+    SECRET_KEY = ''.join([random.SystemRandom().choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)') for i in range(50)])
     pass
