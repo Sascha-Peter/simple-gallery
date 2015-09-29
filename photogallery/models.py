@@ -12,7 +12,11 @@ class Photo(models.Model):
     """Photo model"""
     title = models.CharField(max_length=140)
     location = models.CharField(max_length=250)
+    photo = models.ImageField(upload_to="photo")
     caption = models.TextField()
     date = models.DateField()
     upload_date = models.DateTimeField(auto_now_add=True)
-    tags = TaggableManager()
+    tags = TaggableManager(blank=True)
+
+    def __str__(self):
+        return self.title

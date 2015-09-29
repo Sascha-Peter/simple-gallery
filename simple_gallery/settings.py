@@ -28,6 +28,8 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = (
+    'photogallery',
+
     'taggit',
 
     'django.contrib.admin',
