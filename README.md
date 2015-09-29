@@ -37,9 +37,11 @@ pip install -r pip-requirements.txt
 ### Done
 * Base project and configuration setup
 
+### Work in progress
+* Gallery implementation
+
 ### Outstanding
 * About / Legal template for 3rd party packages used
-* Gallery implementation
 * Frontend design
 
 ## Issues
