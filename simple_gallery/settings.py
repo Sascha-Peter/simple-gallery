@@ -31,6 +31,7 @@ INSTALLED_APPS = (
     'photogallery',
 
     'taggit',
+    'django_extensions',
 
     'django.contrib.admin',
     'django.contrib.auth',
