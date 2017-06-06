@@ -1,4 +1,4 @@
-"""simple_gallery URL Configuration
+"""simple_gallery URL Configuration.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.8/topics/http/urls/
@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from django.views.generic import TemplateView
-from simple_gallery import settings
+from django.conf import settings
 from django.views.static import serve
 
 urlpatterns = [
@@ -29,4 +29,4 @@ if settings.DEBUG:
     urlpatterns += [
         url(r'^media/(?P<path>.*)$', serve, {
             'document_root': settings.MEDIA_ROOT,
-            }), ]
+        }), ]
