@@ -1,4 +1,4 @@
-Django==1.8.3
+Django==1.11.15
 Pillow==2.9.0
 django-taggit==0.17.1
 psycopg2==2.6.1
