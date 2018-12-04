@@ -1,4 +1,4 @@
-Django==1.11.15
+Django==2.1.4
 django-extensions==2.1.2
 django-taggit==0.23.0
 Pillow==5.2.0
