@@ -5,4 +5,4 @@ django-taggit==1.1.0
 django-extensions==2.1.9
 Django==3.0
 six==1.12.0
-typing==3.6.6
+typing==3.7.4.1
